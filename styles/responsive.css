@@ -28,13 +28,10 @@
 
     .tagline {
         font-size: 1rem;
+        text-wrap: balance;
     }
 
     .cta-button {
         font-size: 1rem;
-    }
-
-    .logo img {
-        margin: 0;
     }
 }

@@ -55,6 +55,7 @@ body {
 .text {
     text-align: center;
     margin-bottom: 20px;
+    text-wrap: balance;
 }
 
 .cta-button {
