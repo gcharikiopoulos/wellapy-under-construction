@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #35499e;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* .left-side {
+    flex: 4;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.left-side {
+    background-color: #f4f4f4; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 600px;
+    height: auto;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    width: 437px;
+    height: 77px;
+    display: inline-block;
+    /* padding: 20px 40px; */
+    background-image: url('button-70.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    line-height: 77px;
+    text-align: center;
+    /* border-radius: 30px; */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-buttons a {
+    width: 73px;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    /*border-radius: 50%;*/
+    text-decoration: none;
+}
+
+.social-buttons a[aria-label="Facebook"] {
+    background-image: url('FACEBOOK-50.png');
+}
+
+.social-buttons a[aria-label="Instagram"] {
+    background-image: url('INSTAGRAM-50.png');
+}
+
+.social-buttons a[aria-label="LinkedIn"] {
+    background-image: url('LINKEDIN-50.png');
+}
