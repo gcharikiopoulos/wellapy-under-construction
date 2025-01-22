@@ -115,3 +115,10 @@ body {
 .social-icon:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    margin: 40px 0 20px;
+}
