@@ -18,10 +18,25 @@ body {
     font-size: 0.9rem;
 }
 
+.top-menu {
+    display: block;
+    padding: 20px 20px 0;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #35499e;
+}
+
+.top-menu a:hover {
+    text-decoration: underline;
+    color: #35499e;
+}
+
 header {
     max-width: 800px;
     background-color: #fff;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     padding: 20px 0 0;
     text-align: center;
 }
@@ -49,6 +64,74 @@ header img {
 .container {
     max-width: 800px;
     margin: 20px auto;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+    text-wrap: balance;
+    width: 80%;
+}
+
+.cta-button {
+    width: 40%;
+    min-width: 200px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right, #35499e, #00b2ba, #39b54a);
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+  
+.cta-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.facebook {
+    background-color: #0866ff;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #F7D447, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.linkedin {
+    background-color: #0a66c2;
+}
+
+.social-icon:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.index-container {
+    text-align: center;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    align-items: center;
 }
 
 hr {
