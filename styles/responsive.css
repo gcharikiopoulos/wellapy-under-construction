@@ -4,7 +4,8 @@
         flex-direction: column;
     }
 
-    .left-side, .right-side {
+    .left-side,
+    .right-side {
         flex: none;
     }
 
@@ -14,6 +15,11 @@
 
     .cta-button {
         font-size: 1.2rem;
+    }
+
+    .professionals-grid,
+    .promo-grid {
+        grid-template-columns: 1fr; /* 1 column layout for smaller screens */
     }
 }
 

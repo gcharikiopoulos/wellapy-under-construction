@@ -11,26 +11,10 @@ body {
 }
 
 .main {
-    padding: 0 20px;
     margin: 20px 10px;
     border-radius: 30px;
     background-color: #ffffff;
     font-size: 0.9rem;
-}
-
-.top-menu {
-    display: block;
-    padding: 20px 20px 0;
-}
-
-.top-menu a {
-    text-decoration: none;
-    color: #35499e;
-}
-
-.top-menu a:hover {
-    text-decoration: underline;
-    color: #35499e;
 }
 
 header {
@@ -55,15 +39,77 @@ header img {
     max-width: 800px;
     margin: auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .title h2 {
     margin: 30px 0 0;
 }
 
+.ribbon {
+    width: 100%;
+    background-color: #f4f5fa;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.ribbon h4 {
+    margin-bottom: 0;
+}
+
+.professionals-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 3 equal columns */
+    gap: 16px; /* Space between the boxes */
+    justify-content: center; /* Centers the columns horizontally */
+    padding: 16px;
+}
+
+.professionals-grid-item {
+    background-color: #00b2ba;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    min-width: 200px;
+    font-weight: bold;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 16px; /* Space between the boxes */
+    padding: 16px;
+    margin-top: 20px;
+}
+
+.promo-grid-item {
+    /* background-color: #f4f5fa; */
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.promo-grid-item .fas {
+    font-size: 1.5rem;
+    color: #5d6db1;
+}
+
+.promo-grid-item h4 {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.promo-grid-item p {
+    font-size: 0.8rem;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
+    padding: 0 20px;
 }
 
 .text {
@@ -90,6 +136,10 @@ header img {
   
 .cta-button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h5.social-header {
+    margin-top: 60px;
 }
 
 .social-icons {
@@ -142,6 +192,11 @@ hr {
     margin-top: 20px;
 }
 
+.footer hr {
+    width: 60%;
+    margin: 40px auto 20px;
+}
+
 .pricing-card hr {
     margin: 0 auto;
 }
@@ -150,4 +205,30 @@ hr {
     text-align: center;
     font-size: 0.8em;
     margin-top: 30px;
+}
+
+.wellapy-pill {
+    width: auto;
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f4f5fa;
+    border-radius: 30px;
+    color: #35499e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('../assets/favicon.png'); /* Replace with your icon file */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 32px 32px; /* Adjust size as needed */
+    padding: 10px 10px 10px 48px; /* Add space for the icon */
+    line-height: 1.5;
+}
+
+.wellapy-pill a {
+    color: #00b2ba;
+    text-decoration: none;
+}
+
+.wellapy-pill a:hover {
+    text-decoration: underline;
 }
