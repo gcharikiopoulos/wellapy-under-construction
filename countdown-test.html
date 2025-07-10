@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-53JL127GSR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-53JL127GSR');
+        </script>
+        <!-- End Google tag -->
+        <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wellapy | Σύντομα κοντά σας</title>
+        <meta name="description" content="Wellapy - Η Νο1 πλατφόρμα για επαγγελματίες ψυχικής υγείας και wellness. Περιορισμένος αριθμός προεγγραφών!">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/pages-2.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+    </head>
+    <body>
+        <div class="main">
+
+            <header>
+                <img src="assets/LOGO-80.png" alt="Logo" />
+
+                <div class="tagline">
+                    Η Νο1 πλατφόρμα ψυχικής υγείας και wellness
+                </div>
+        
+                <hr style="width: 30%;" />
+            </header>
+
+            <div class="wellapy-container">
+                <!-- Title -->
+                <h1 class="wellapy-title">
+                    Βρες τον επαγγελματία που σου<br /><span class="wellapy-gradient">ταιριάζει</span>, όπου κι αν είσαι
+                </h1>
+
+                <h2 style="margin-top: 0;">Tο Wellapy θα είναι live σε:</h2>
+
+                <!-- Countdown Timer -->
+                <div class="wellapy-countdown-container">
+                    <div class="wellapy-countdown-grid">
+                        <div class="wellapy-countdown-item">
+                            <div class="wellapy-countdown-number" id="countdown-days">0</div>
+                            <div class="wellapy-countdown-label">Μέρες</div>
+                        </div>
+                        <div class="wellapy-countdown-item">
+                            <div class="wellapy-countdown-number" id="countdown-hours">0</div>
+                            <div class="wellapy-countdown-label">Ώρες</div>
+                        </div>
+                        <div class="wellapy-countdown-item">
+                            <div class="wellapy-countdown-number" id="countdown-minutes">0</div>
+                            <div class="wellapy-countdown-label">Λεπτά</div>
+                        </div>
+                        <div class="wellapy-countdown-item">
+                            <div class="wellapy-countdown-number" id="countdown-seconds">0</div>
+                            <div class="wellapy-countdown-label">Δευτερόλεπτα</div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .wellapy-countdown-container {
+                        max-width: 800px;
+                        margin: 40px auto 0;
+                        padding: 0 20px;
+                    }
+
+                    .wellapy-countdown-grid {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 24px;
+                        margin-bottom: 40px;
+                    }
+
+                    .wellapy-countdown-item {
+                        background: #fff;
+                        border-radius: 20px;
+                        padding: 32px 16px;
+                        text-align: center;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                        border: 1px solid #f1f5f9;
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+
+                    .wellapy-countdown-item:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+                    }
+
+                    .wellapy-countdown-number {
+                        font-size: 3.5rem;
+                        font-weight: 700;
+                        background: linear-gradient(135deg, #35499e, #00b2ba);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        margin-bottom: 12px;
+                        line-height: 1;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+
+                    .wellapy-countdown-label {
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        color: #6b7280;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+
+                    .wellapy-countdown-expired {
+                        text-align: center;
+                        padding: 40px 20px;
+                        background: linear-gradient(135deg, #35499e, #00b2ba);
+                        border-radius: 20px;
+                        color: white;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        margin: 40px auto;
+                        max-width: 400px;
+                    }
+
+                    /* Responsive Design */
+                    @media (max-width: 768px) {
+                        .wellapy-countdown-grid {
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 16px;
+                        }
+                        
+                        .wellapy-countdown-item {
+                            padding: 24px 12px;
+                        }
+                        
+                        .wellapy-countdown-number {
+                            font-size: 2.5rem;
+                        }
+                        
+                        .wellapy-countdown-label {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .wellapy-countdown-grid {
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 12px;
+                        }
+                        
+                        .wellapy-countdown-item {
+                            padding: 20px 8px;
+                        }
+                        
+                        .wellapy-countdown-number {
+                            font-size: 2rem;
+                        }
+                        
+                        .wellapy-countdown-label {
+                            font-size: 0.75rem;
+                        }
+                    }
+                </style>
+
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Jul 16, 2025 12:00:00").getTime();
+
+                    // Update the count down every 1 second
+                    var countdownInterval = setInterval(function() {
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Update the countdown display
+                        document.getElementById("countdown-days").textContent = days.toString().padStart(2, '0');
+                        document.getElementById("countdown-hours").textContent = hours.toString().padStart(2, '0');
+                        document.getElementById("countdown-minutes").textContent = minutes.toString().padStart(2, '0');
+                        document.getElementById("countdown-seconds").textContent = seconds.toString().padStart(2, '0');
+
+                        // If the count down is finished, show expired message
+                        if (distance < 0) {
+                            clearInterval(countdownInterval);
+                            document.querySelector('.wellapy-countdown-container').innerHTML = 
+                                '<div class="wellapy-countdown-expired">Το Wellapy είναι τώρα διαθέσιμο!</div>';
+                        }
+                    }, 1000);
+
+                    // Initialize countdown immediately
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+                    if (distance > 0) {
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        document.getElementById("countdown-days").textContent = days.toString().padStart(2, '0');
+                        document.getElementById("countdown-hours").textContent = hours.toString().padStart(2, '0');
+                        document.getElementById("countdown-minutes").textContent = minutes.toString().padStart(2, '0');
+                        document.getElementById("countdown-seconds").textContent = seconds.toString().padStart(2, '0');
+                    } else {
+                        document.querySelector('.wellapy-countdown-container').innerHTML = 
+                            '<div class="wellapy-countdown-expired">Το Wellapy είναι τώρα διαθέσιμο!</div>';
+                    }
+                </script>
+
+                <!-- Description -->
+                <p class="wellapy-description">
+                    Στο Wellapy, ανακαλύπτεις πιστοποιημένους ψυχολόγους, life coaches, διατροφολόγους και συμβούλους ψυχικής υγείας. Αναζήτησε εύκολα ειδικότητα και περιοχή και βρες τον κατάλληλο για εσένα - για online ή διά ζώσης συνεδρίες, με απόλυτη ασφάλεια και διαφάνεια.
+                </p>
+
+                <!-- Features -->
+                <div class="wellapy-features">
+                    <div class="wellapy-feature">
+                        <span class="wellapy-feature-dot"></span>
+                        <span class="wellapy-featuretext">Πιστοποιημένοι επαγγελματίες</span>
+                    </div>
+                    <div class="wellapy-feature">
+                        <span class="wellapy-feature-dot"></span>
+                        <span class="wellapy-featuretext">GDPR Compliant</span>
+                    </div>
+                    <div class="wellapy-feature">
+                        <span class="wellapy-feature-dot"></span>
+                        <span class="wellapy-featuretext">Διαθέσιμο 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Become Partner Section for WP Bakery -->
+            <div class="become-partner-section">
+                <div class="become-partner-content">
+                    <div class="become-partner-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <line x1="19" x2="19" y1="8" y2="14"></line>
+                            <line x1="22" x2="16" y1="11" y2="11"></line>
+                        </svg>
+                    </div>
+                    
+                    <h2>Είσαι επαγγελματίας ψυχικής υγείας ή wellness;</h2>
+                    
+                    <p>Έλα στην ομάδα του Wellapy και βοήθησε περισσότερους ανθρώπους να κάνουν το πρώτο βήμα προς τη βελτίωση.</p>
+                    
+                    <div class="become-partner-buttons">
+                        <a href="signup.html" class="become-partner-btn primary">Γίνε συνεργάτης →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="home-section-header" style="margin-top: 100px;">Ακολούθησέ μας στα social media!</h2>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Wellapy/61571738606745/" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/wellapy.gr/" target="_blank" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/wellapy-gr" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <hr class="footer-hr" style="width: 50%; margin-top: 60px;" />
+
+        <div class="footer" style="margin-top: 10px;">
+            <p>© 2025 Wellapy. All rights reserved.</p>
+            <a href="privacy-policy.html" target="_blank">Πολιτική Απορρήτου</a> - 
+            <a href="cookie-policy.html" target="_blank">Πολιτική Cookies</a> - 
+            <a href="terms-for-professionals.html" target="_blank">Όροι και προϋποθέσεις προβολής επαγγελματία</a> -
+            <a href="terms-for-users.html" target="_blank">Όροι χρήσης και παροχής υπηρεσιών</a>
+            <p><span style="display: inline;">info</span><span style="display: inline;">@</span><span style="display: inline;">wellapy.gr</span></p>
+        </div>
+    </body>
+</html>
